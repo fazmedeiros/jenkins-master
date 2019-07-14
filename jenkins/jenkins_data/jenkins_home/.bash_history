@@ -245,3 +245,26 @@ sshpass-e ssh remote_user@remote_host
 sshpass -e ssh remote_user@remote_host
 sshpass -p 1234 ssh remote_user@remote_host
 ssh remote_user@remote_host
+ansible
+cd 
+cd ansible/
+ls -ltr
+ansible -i hosts -m ping test1
+ssh remote_user@remote_host
+cd
+cd .ssh/
+dir
+ls -la
+rm -rf known_hosts 
+cd
+ssh remote_user@remote_host
+cd
+cd ansible/
+dir
+ssh -i remote-key remote_user@remote_host
+chmod 600 remote-key 
+ssh -i remote-key remote_user@remote_host
+ansible -i hosts -m ping test1
+vi hosts 
+vim hosts 
+exit

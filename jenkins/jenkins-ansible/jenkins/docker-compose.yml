@@ -1,9 +1,11 @@
 version: '3'
 services:
   ubuntu_sshd:
+    privileged: true
     container_name: ubuntu_sshd
-    image: ubuntu_sshd:latest
+    image: ubuntu_sshd:18.04
     build:
       context: ubuntu_sshd
     volumes:
       - /home/felipemedeiros:/home/felipemedeiros
+    network_mode: bridge  
